@@ -89,5 +89,15 @@ form ol li:last-child {
     border-bottom-right-radius: 25px;
     padding-bottom: 25px;
 }
+
+input[type="submit"] {
+    cursor: wait;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    input[type="submit"] {
+        cursor: crosshair;
+    }
+}
 /*Make sure to comment out line 32 above*/
 /*** END HERE ***/
