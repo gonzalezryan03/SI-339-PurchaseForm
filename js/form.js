@@ -16,3 +16,16 @@ function sameAddress(button) {
 
     }
 }
+
+function checkEmails(){
+    console.log("Changed the email");
+    let em1 = document.querySelector("#email");
+    let em2 = document.querySelector("#email2")
+
+    if (em1.value != em2.value){
+        alert("The emails must match");
+        em2.focus();
+        return false;
+    }
+    return true;
+}
